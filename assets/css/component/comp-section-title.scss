@@ -5,6 +5,9 @@
     line-height: 1.5;
     color: $keyColor;
     text-align: center;
+    span{
+      display: block;
+    }
   }
   .ttl_description{
     margin-top: 15px;
@@ -32,6 +35,9 @@
     margin-bottom: 60px;
     .section_ttl{
       font-size: 3.2rem;
+      span{
+        display: none;
+      }
     }
     .ttl_description{
       margin-top: 25px;

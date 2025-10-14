@@ -14,7 +14,7 @@
       height: 64px;
       background-repeat: no-repeat;
       background-size: contain;
-      background-image: url(../img/advice_cat.svg);
+      background-image: url(../img/advice_dog.svg);
     }
     &:nth-last-of-type(1){
       margin-bottom: 0px;
@@ -104,25 +104,26 @@
 @media screen and (min-width: 980px){
   .comp-advice-box{
     @include flexSet;
+    justify-content: center;
     .advice_item{
-      width: 32%;
-      margin-right: 2%;
+      position: relative;
+      width: 42%;
+      margin-right: 5%;
       border-radius: 25px;
-      margin-bottom: 0px;
-      &:nth-of-type(3n){
+      padding-bottom: 80px;
+      margin-bottom: 80px;
+      &:nth-of-type(2n){
         margin-right: 0;
       }
+      &:nth-last-of-type(1), &:nth-last-of-type(2){
+        margin-bottom: 0px;
+      }
       &::before{
-        display: block;
-        content: "";
-        position: absolute;
-        top:-40px;
-        left: 12px;
-        width: 60px;
-        height: 64px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-image: url(../img/advice_cat.svg);
+        top:-50px;
+        left: 20px;
+        width: 80px;
+        height: 84px;
+        background-image: url(../img/advice_dog.svg);
       }
       &:nth-last-of-type(1){
         margin-bottom: 0px;
@@ -153,7 +154,11 @@
         }
       }
       .button_wrap{
-        padding-bottom: 30px;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: 30px;
+        padding-bottom: 0px;
         button{
           width: 90%;
           padding: 12px 0;

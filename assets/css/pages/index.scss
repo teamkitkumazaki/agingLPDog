@@ -190,8 +190,29 @@
   }
   .section-care-detail{
     padding: 13vw 0;
+    .button_wrapper{
+      .button_item{
+        margin-bottom: 10px;
+        a{
+          text-align: center;
+          @include flexSet;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.5rem;
+          line-height: 1.5;
+          background:$keyColor;
+          color: #fff;
+          padding: 10px 0;
+          border-radius: 200px;
+          .caret{
+            display: none;
+          }
+        }
+      }
+    }
   }
   .section-pickup-movie{
+    padding-bottom: calc(60px + 12vw);
     .movie_wrap{
       background: $bgColor;
       border-radius: 15px;
@@ -239,12 +260,6 @@
         }
       }
     }
-  }
-  .section-healthcare{
-    margin-top: 13vw;
-    padding: 13vw 0 calc(13vw + 60px);
-    background: $bgColor;
-    border-radius: 60px 60px 0 0;
   }
   .section-qoupon-wrap02{
     background: $keyColor;
@@ -481,12 +496,51 @@
     }
     .section-care-detail{
       padding: 120px 0 120px;
+      .button_wrapper{
+        .button_item{
+          max-width: 520px;
+          margin: 0 auto 15px;
+          a{
+            @include flexSet;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            padding: 15px 0;
+            transition: background .3s;
+            will-change: background;
+            &:hover{
+              background: $hoverColor;
+            }
+            br{
+              display: none;
+            }
+            .caret{
+              width: 20px;
+              height: 20px;
+              background: #fff;
+              border-radius: 50%;
+              margin-left: 8px;
+              @include flexSet;
+              align-items: center;
+              justify-content: center;
+              svg{
+                width: 6px;
+                .cls-1{
+                  fill:none;
+                  stroke:#e50013;
+                }
+              }
+            }
+          }
+        }
+      }
     }
     .section-pickup-movie{
+      padding-bottom: 240px;
       .movie_wrap{
         background: $bgColor;
-        border-radius: 120px;
-        padding: 120px;
+        border-radius: 100px;
+        padding: 100px;
         .movie_ttl{
           font-size: 3.2rem;
           margin-bottom: 50px;
@@ -510,11 +564,6 @@
           margin: 0 auto;
         }
       }
-    }
-    .section-healthcare{
-      margin-top: 160px;
-      padding: 120px 0 calc(160px + 120px);
-      border-radius: 120px 120px 0 0;
     }
     .section-qoupon-wrap02{
       border-radius: 120px 120px 0 0;

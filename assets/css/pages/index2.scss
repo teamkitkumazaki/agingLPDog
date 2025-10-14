@@ -1,0 +1,159 @@
+.page-aging-lp{
+  width: 100%;
+  overflow: hidden;
+  .section-main2{
+    position: relative;
+    z-index: 20;
+    padding: 5vw 0 7vw;
+    background: $bgColor;
+    border-radius: 0 0 60px 60px;
+    .main_image{
+      margin: 25px 0;
+      padding: 20px;
+      text-align: center;
+      background: #fff;
+      border-radius: 20px;
+    }
+    .button_wrapper{
+      margin-top: 20px;
+      .button_item{
+        a,button{
+          width: 100%;
+          text-align: center;
+          @include flexSet;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.5rem;
+          line-height: 1.5;
+          background:$keyColor;
+          color: #fff;
+          padding: 10px 0;
+          border-radius: 200px;
+          .caret{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .section-care-detail{
+    background: #fff;
+    padding: calc(13vw + 60px) 0 calc(13vw + 60px);
+    margin: -60px 0;
+  }
+  .section-healthcare{
+    padding: 13vw 0 13vw;
+    background: $bgColor;
+    border-radius: 60px 60px 0 0;
+  }
+  .section-shindan{
+    border-top: 5px solid #fff;
+    background: $bgColor;
+    padding: 13vw 0 calc(10vw + 60px);
+    .comp-section-title{
+      margin-bottom: 0;
+      .small{
+        display: block;
+      }
+    }
+    .shindan_img{
+      margin: 25px 0;
+      padding: 10px 2px;
+      border-radius: 20px;
+      overflow: hidden;
+      background: #fff;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .page-aging-lp{
+    width: 100%;
+    overflow: hidden;
+    .section-main2{
+      position: relative;
+      z-index: 20;
+      padding: 160px 0 60px;
+      border-radius: 0 0 120px 120px;
+      .main_image{
+        margin: 50px 0;
+        padding: 40px 0;
+        border-radius: 40px;
+        img{
+          width: 50%;
+        }
+      }
+      .button_wrapper{
+        margin-top: 40px;
+        .button_item{
+          max-width: 520px;
+          margin: 0 auto;
+          a, button{
+            @include flexSet;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            padding: 15px 0;
+            transition: background .3s;
+            will-change: background;
+            &:hover{
+              background: $hoverColor;
+            }
+            br{
+              display: none;
+            }
+            .caret{
+              width: 20px;
+              height: 20px;
+              background: #fff;
+              border-radius: 50%;
+              margin-left: 8px;
+              @include flexSet;
+              align-items: center;
+              justify-content: center;
+              svg{
+                width: 6px;
+                .cls-1{
+                  fill:none;
+                  stroke:#e50013;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .section-care-detail{
+      background: #fff;
+      padding: calc(120px + 120px) 0 calc(160px + 120px);
+      margin: -160px 0;
+    }
+    .section-healthcare{
+      margin-top: 0px;
+      padding: 120px 0 120px;
+      border-radius: 120px 120px 0 0;
+    }
+    .section-shindan{
+      border-top: 5px solid #fff;
+      background: $bgColor;
+      padding: 120px 0 calc(120px + 120px);
+      .comp-section-title{
+        margin-bottom: 0;
+        .small{
+          display: block;
+        }
+      }
+      .shindan_img{
+        padding: 30px;
+        border-radius: 40px;
+        overflow: hidden;
+        background: #fff;
+        max-width: 80%;
+        margin: 50px auto;
+        img{
+        }
+      }
+    }
+  }
+
+}
