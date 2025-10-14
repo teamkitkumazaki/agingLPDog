@@ -1,0 +1,109 @@
+.comp-anker-button{
+  .button_item{
+    margin-bottom: 12px;
+    &:nth-last-of-type(1){
+      margin-bottom: 0;
+    }
+    button{
+      width: 100%;
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px 15px 15px;
+      color: $keyColor;
+      text-align: center;
+      font-weight: bold;
+      .ttl{
+        display:block;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 1.6;
+        margin-bottom: 5px;
+        .caret{
+          display: none;
+        }
+      }
+      .description{
+        font-size: 1.4rem;
+        color: $fontColor;
+      }
+      .caret_sp{
+        display: block;
+        margin: 10px auto 0;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: $keyColor;
+        @include flexSet;
+        align-items: center;
+        justify-content: center;
+        svg{
+          width: 12px;
+          .cls-1{
+            fill:none;
+            stroke:#fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 980px){
+  .comp-anker-button{
+    @include flexSet;
+    justify-content: center;
+    .button_item{
+      width: 66%;
+      margin-right: 0%;
+      margin-bottom: 0px;
+      &:nth-last-of-type(1){
+        margin-right: 0;
+      }
+      button{
+        border-radius: 20px;
+        padding: 30px 0;
+        color: $keyColor;
+        text-align: center;
+        transition: background .3s;
+        will-change: background;
+        .ttl{
+          @include flexSet;
+          justify-content: center;
+          align-items: center;
+          font-size: 2.0rem;
+          margin-bottom: 10px;
+          br{
+            display: none;
+          }
+          .caret{
+            display: block;
+            margin-left: 15px;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: $keyColor;
+            @include flexSet;
+            align-items: center;
+            justify-content: center;
+            svg{
+              width: 9px;
+              .cls-1{
+                fill:none;
+                stroke:#fff;
+              }
+            }
+          }
+        }
+        .description{
+          font-size: 1.8rem;
+        }
+        .caret_sp{
+          display: none;
+        }
+        &:hover{
+          background: #f1f1f1;
+        }
+      }
+    }
+  }
+}

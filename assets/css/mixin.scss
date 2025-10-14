@@ -1,0 +1,72 @@
+$fontColor: #4D4D4D;
+$keyColor: #E50013;
+$insertColor: #E92434;
+$themeRed: #E50013;
+$bgColor: #F7F7F7;
+$hoverColor: #F25462;
+$borderColor: #d8d8d8;
+
+/* ----- Google Fonts ----- */
+
+@mixin rotunda{
+  font-family: rotunda-variable, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+@mixin mincho{
+  font-family: dnp-shuei-nshogomincho-std, sans-serif;
+  letter-spacing: 0.06em;
+}
+
+@mixin wrapper{
+  width: 87vw;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 720px){
+    width: 83%;
+    max-width: 1590px;
+  }
+}
+@mixin flexSet {
+	display: flex;
+	flex-wrap: wrap;
+}
+@mixin bgSet{
+  background:{
+    repeat: no-repeat;
+    position: center center;
+    size: cover;
+  }
+}
+@mixin hover{
+  transition: opacity .3s;
+  will-change: opacity;
+  &:hover{
+    opacity: 0.75;
+  }
+}
+@mixin txtHover{
+  transition: color .2s;
+  will-change: color;
+  &:hover{
+    color: #979797;
+  }
+}
+
+@mixin basicP{
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8;
+  box-sizing: border-box;
+  p{
+    margin-bottom: 1em;
+    &:nth-last-of-type(1){
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 980px){
+    font-size: 1.8rem;
+    padding: 0;
+  }
+}

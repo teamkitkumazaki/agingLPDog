@@ -1,0 +1,78 @@
+html{
+	font-size: 9px;
+	/*scroll-behavior: smooth;*/
+	@media screen and (min-width: 351px){
+		font-size: 10px;
+	}
+	@media screen and (min-width: 980px){
+		font-size: 9px;
+	}
+	@media screen and (min-width: 1341px){
+		font-size: 10px;
+	}
+	@media screen and (min-width: 1700px){
+		font-size: 11px;
+	}
+}
+
+body {
+	/*font-size: 16px;*/
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+	font-size: 1.4rem;
+  line-height: 1;
+	letter-spacing: 0.02em;
+  color: $fontColor;
+	background: #fff;
+	font-weight: 500; // M 500, B 600
+	font-family: YakuHanJP, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W3", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS Pgothic", "Osaka", sans-serif, Helvetica, Helvetica Neue, Arial, Verdana;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+}
+body.bind {
+	position: fixed;
+	left:0;
+	right:0;
+	top:0;
+	margin: auto;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+h1,h2,h3,h4,h5{
+	font-weight: 700;
+}
+article{
+	padding-top: 0px;
+	transition: opacity 2s;
+	will-change: opacity;
+	overflow: hidden;
+	&.loading{
+		opacity: 0;
+	}
+}
+
+section{
+	.section_inner{
+		@include wrapper;
+		@media screen and (min-width: 720px){
+			min-width: 1200px;
+		}
+	}
+}
+
+button{
+	font-family: inherit;
+	font-weight: inherit;
+	background: transparent;
+	appearance: none;
+	border: none;
+	margin:0;
+	padding: 0;
+	color: inherit;
+	cursor: pointer;
+	&:focus{
+		outline: none;
+	}
+}

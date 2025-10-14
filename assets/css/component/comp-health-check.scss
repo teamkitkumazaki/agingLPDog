@@ -1,0 +1,103 @@
+.comp-health-check{
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  .check_ttl{
+    background: $keyColor;
+    border-radius: 200px;
+    padding: 12px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin-bottom: 25px;
+  }
+  .checklist_wrapper{
+    margin-bottom: 30px;
+    &:nth-last-of-type(1){
+      margin-bottom: 0;
+    }
+    .checklist_box{
+      margin-bottom: 30px;
+      &:nth-last-of-type(1){
+        margin-bottom: 0;
+      }
+      .list_ttl{
+        font-size: 1.8rem;
+        text-align: center;
+        color: $keyColor;
+        border-bottom: 1px dotted $fontColor;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+      }
+      ul{
+        li{
+          position: relative;
+          font-size: 1.4rem;
+          line-height: 1.5;
+          padding-left: 25px;
+          margin-bottom: 12px;
+          &::before{
+            display: block;
+            content: "";
+            position: absolute;
+            top:3px;
+            left:0;
+            width: 18px;
+            height: 16px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../img/checkmark.svg);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 980px){
+  .comp-health-check{
+    background: #fff;
+    border-radius: 15px;
+    padding: 60px 120px 80px;
+    @include flexSet;
+    justify-content: space-between;
+    .check_ttl{
+      width: 100%;
+      padding: 15px 0;
+      font-size: 2.2rem;
+      margin-bottom: 60px;
+      br{
+        display: none;
+      }
+    }
+    .checklist_wrapper{
+      margin-bottom: 0px;
+      width: 47%;
+      .checklist_box{
+        margin-bottom: 40px;
+        &:nth-last-of-type(1){
+          margin-bottom: 0;
+        }
+        .list_ttl{
+          font-size: 2.2rem;
+          padding-bottom: 20px;
+          margin-bottom: 20px;
+        }
+        ul{
+          li{
+            font-size: 1.6rem;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            &::before{
+              top:4px;
+              left:0;
+              width: 22px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

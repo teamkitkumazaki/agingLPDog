@@ -1,0 +1,30 @@
+header{
+  border-top: 5px solid $keyColor;
+  padding: 4vw;
+  .header_logo{
+    width: 100px;
+    a{
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 980px){
+  header{
+    position: absolute;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 20;
+    border-top: 10px solid $keyColor;
+    padding: 30px;
+    box-sizing: border-box;
+    .header_logo{
+      width: 160px;
+      a{
+        display: block;
+        @include hover;
+      }
+    }
+  }
+}

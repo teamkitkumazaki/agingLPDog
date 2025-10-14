@@ -1,0 +1,40 @@
+.comp-fixed-cart-buton{
+  position: fixed;
+  z-index: 100;
+  right: 10px;
+  bottom: 10px;
+  button{
+    width: 70px;
+    height: 70px;
+    background: $keyColor;
+    @include flexSet;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    img{
+      width: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 980px){
+  .comp-fixed-cart-buton{
+    right: 20px;
+    bottom: 20px;
+    button{
+      width: 120px;
+      height: 120px;
+      border: 2px solid #fff;
+      transition: background .3s;
+      will-change: background;
+      img{
+        width: 45px;
+      }
+      &:hover{
+        background: $hoverColor;
+      }
+    }
+  }
+
+}

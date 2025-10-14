@@ -1,0 +1,78 @@
+.comp-care-buttons{
+  .button_item{
+    margin-bottom: 8px;
+    &:nth-last-of-type(1){
+      margin-bottom: 0;
+    }
+    button{
+      width: 100%;
+      @include flexSet;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 0;
+      background: $keyColor;
+      border-radius: 200px;
+      color: #fff;
+      .txt{
+        font-size: 1.6rem;
+        margin-right: 8px;
+      }
+      .caret{
+        position: relative;
+        width: 18px;
+        height: 18px;
+        background: #fff;
+        border-radius: 50%;
+        &::before,&::after{
+          display: block;
+          content: "";
+          position: absolute;
+          top:0;
+          left:0;
+          right:0;
+          bottom:0;
+          margin: auto;
+          background: $keyColor;
+        }
+        &::before{
+          width: 8px;
+          height: 2px;
+        }
+        &::after{
+          width: 2px;
+          height: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 980px){
+  .comp-care-buttons{
+    @include flexSet;
+    justify-content: center;
+    .button_item{
+      width: 32%;
+      margin-right: 2%;
+      margin-bottom: 25px;
+      &:nth-of-type(3n){
+        margin-right: 0;
+      }
+      &:nth-last-of-type(1){
+        margin-bottom: 12px;
+      }
+      button{
+        padding: 15px 0;
+        transition: background .3s;
+        will-change: background;
+        .txt{
+          font-size: 1.8rem;
+          margin-right: 8px;
+        }
+        &:hover{
+          background: $hoverColor;
+        }
+      }
+    }
+  }
+}

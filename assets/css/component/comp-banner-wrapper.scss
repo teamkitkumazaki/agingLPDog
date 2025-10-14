@@ -1,0 +1,151 @@
+.comp-banner-wrapper{
+  padding: 20px;
+  background: #fff;
+  border-radius: 20px;
+  .banner_img{
+    margin-bottom: 20px;
+  }
+  .banner_desc{
+    margin-bottom: 20px;
+    p{
+      font-size: 1.3rem;
+      line-height: 1.78;
+      br{
+        display: none;
+      }
+      span{
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $keyColor;
+      }
+      &.small{
+        margin-top: 10px;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .campaign_duration{
+    text-align: center;
+    margin-bottom: 30px;
+    .ttl{
+      display: inline-block;
+      border: 1px solid $keyColor;
+      color: $keyColor;
+      font-size: 1.6rem;
+      font-weight: 600;
+      padding: 7px 12px;
+      margin-bottom: 20px;
+      border-radius: 200px;
+    }
+    .date{
+      text-align: center;
+      font-size: 2.0rem;
+      font-weight: 600;
+      color: $keyColor;
+    }
+  }
+  .button_wrapper{
+    .button_item{
+      margin-bottom: 10px;
+      a{
+        text-align: center;
+        @include flexSet;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        background:$keyColor;
+        color: #fff;
+        padding: 10px 0;
+        border-radius: 200px;
+        .caret{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 980px){
+  .comp-banner-wrapper{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 60px 120px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 60px;
+    .banner_img{
+      margin-bottom: 40px;
+    }
+    .banner_desc{
+      margin-bottom: 40px;
+      p{
+        font-size: 1.8rem;
+        line-height: 1.78;
+        text-align: center;
+        br{
+          display: block;
+        }
+        span{
+          font-size: 2.2rem;
+        }
+        &.small{
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .campaign_duration{
+      @include flexSet;
+      align-items: baseline;
+      justify-content: center;
+      margin-bottom: 50px;
+      .ttl{
+        padding: 7px 20px;
+        margin-bottom: 0px;
+        margin-right: 10px;
+        font-size: 1.8rem
+      }
+      .date{
+        font-size: 2.2rem;
+      }
+    }
+    .button_wrapper{
+      .button_item{
+        max-width: 520px;
+        margin: 0 auto 15px;
+        a{
+          @include flexSet;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.8rem;
+          padding: 15px 0;
+          transition: background .3s;
+          will-change: background;
+          &:hover{
+            background: $hoverColor;
+          }
+          br{
+            display: none;
+          }
+          .caret{
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border-radius: 50%;
+            margin-left: 8px;
+            @include flexSet;
+            align-items: center;
+            justify-content: center;
+            svg{
+              width: 6px;
+              .cls-1{
+                fill:none;
+                stroke:#e50013;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.comp-section-title{
+  margin-bottom: 30px;
+  .section_ttl{
+    font-size: 2.0rem;
+    line-height: 1.5;
+    color: $keyColor;
+    text-align: center;
+  }
+  .ttl_description{
+    margin-top: 15px;
+    @include basicP;
+    strong{
+      font-weight: bold;
+      color: $keyColor;
+    }
+    .small{
+      font-size: 1.1rem;
+    }
+  }
+  &.white{
+    .section_ttl{
+      color: #fff;
+    }
+    .ttl_description{
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (min-width: 980px){
+  .comp-section-title{
+    margin-bottom: 60px;
+    .section_ttl{
+      font-size: 3.2rem;
+    }
+    .ttl_description{
+      margin-top: 25px;
+      text-align: center;
+      span{
+        display: block;
+      }
+      .small{
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

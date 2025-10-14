@@ -1,0 +1,30 @@
+
+/*########## ミックスイン ##########*/
+@import 'mixin.scss';
+
+/*########## 共通レイアウト ##########*/
+@import 'common/animation.scss';
+@import 'common/reset.scss';
+@import 'common/form.scss';
+@import 'common/common.scss';
+@import 'common/header.scss';
+@import 'common/footer.scss';
+
+
+/*########## ページ個別レイアウト ##########*/
+@import 'pages/index.scss';
+
+
+/*########## コンポーネント ##########*/
+
+@import 'component/comp-section-title.scss';
+@import 'component/comp-aging-test.scss';
+@import 'component/comp-health-check.scss';
+@import 'component/comp-advice-box.scss';
+@import 'component/comp-food-linups.scss';
+@import 'component/comp-coupon-wrap.scss';
+@import 'component/comp-care-buttons.scss';
+@import 'component/comp-banner-wrapper.scss';
+@import 'component/comp-anker-button.scss';
+@import 'component/comp-fixed-cart-buton.scss';
+@import 'component/comp-detail-pop.scss';

@@ -1,0 +1,48 @@
+.animate-fadeup{
+	/* blur + opacity + transition */
+	opacity: 1;
+	filter: blur(0px) brightness(1);
+	transform: translate3d(0, 0%, 0);
+	transition: opacity .6s, filter .6s cubic-bezier(0.5, 1, 0.89, 1), transform .6s cubic-bezier(0.5, 1, 0.89, 1);
+	will-change: opacity, filter, transform;
+	&.effect, &.delayed_effect{
+		opacity: 0;
+		filter: blur(15px) brightness(1.25);
+		transform: translate3d(0, 100px, 0);
+	}
+}
+.animate-fadeup2{
+	/* opacity + transition */
+	opacity: 1;
+	transform: translate3d(0, 0%, 0);
+	transition: opacity .6s, transform .6s cubic-bezier(0.5, 1, 0.89, 1);
+	will-change: opacity, transform;
+	&.effect, &.delayed_effect{
+		opacity: 0;
+		transform: translate3d(0, 100px, 0);
+	}
+}
+.animate-fadeup3{
+	/* opacity */
+	opacity: 1;
+	transition: opacity .8s cubic-bezier(0.5, 1, 0.89, 1);
+	will-change: opacity;
+	&.effect, &.delayed_effect{
+		opacity: 0;
+	}
+}
+
+.func-txt-anim, .func-txt-anim-wrap{
+	overflow: hidden;
+	span{
+		display: inline-block;
+		transform: translate(0, 100%);
+		filter: blur(3px);
+		transition: transform .5s, filter .5s;
+		will-change: transform;
+		&.display{
+			transform: translate(0, 0);
+			filter: blur(0px);
+		}
+	}
+}

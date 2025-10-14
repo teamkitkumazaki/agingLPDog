@@ -1,0 +1,112 @@
+.comp-food-linups{
+  padding: 20px 0px;
+  border-radius: 20px;
+  background: #fff;
+  .lineup_item{
+    padding: 10vw 0 7vw;
+    border-top: 5px solid $keyColor;
+    &:nth-of-type(1){
+      padding-top: 0;
+      border-top: 0;
+    }
+    &:nth-last-of-type(1){
+      padding-bottom: 0;
+    }
+    .lineup_ttl{
+      @include flexSet;
+      justify-content: center;
+      align-items: center;
+      border-radius: 200px;
+      color: #fff;
+
+      padding: 10px 0;
+      margin: 0 20px 30px;
+      .txt{
+        font-size: 1.8rem;
+        margin-right: 10px;
+      }
+      .age{
+        margin-top: 2px;
+        font-size: 1.2rem;
+        padding: 5px 10px;
+        border-radius: 200px;
+        background: #fff;
+      }
+      &.age7{
+        background: #156083;
+        .age{
+          color: #156083;
+        }
+      }
+      &.age12{
+        background: #845416;
+        .age{
+          color: #845416;
+        }
+      }
+    }
+    .lineup_images{
+      padding: 0 10px;
+      .image_item{
+        margin-bottom: 30px;
+        &:nth-last-of-type(1){
+          margin-bottom: 0;
+        }
+        .img_ttl{
+          font-size: 1.5rem;
+          color: $keyColor;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 980px){
+  .comp-food-linups{
+    padding: 60px 0;
+    border-radius: 60px;
+    background: #fff;
+    .lineup_item{
+      padding: 80px 60px 80px;
+      border-top: 5px solid $keyColor;
+      &:nth-of-type(1){
+        padding-top: 0;
+        border-top: 0;
+      }
+      &:nth-last-of-type(1){
+        padding-bottom: 0;
+      }
+      .lineup_ttl{
+        padding: 15px 0;
+        margin: 0 0px 80px;
+        .txt{
+          font-size: 2.6rem;
+          margin-right: 10px;
+        }
+        .age{
+          margin-top: 2px;
+          font-size: 1.6rem;
+          padding: 5px 10px;
+          border-radius: 200px;
+          color: #156083;
+          background: #fff;
+        }
+      }
+      .lineup_images{
+        @include flexSet;
+        justify-content: space-between;
+        padding: 0;
+        .image_item{
+          width: 47%;
+          margin-bottom: 0px;
+          .img_ttl{
+            font-size: 2.0rem;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
