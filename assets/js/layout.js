@@ -195,7 +195,7 @@ $(function() {
       });
       $('body').addClass('fixed');
       $('.detail_inner').css({'display': 'none'});
-      $(modalURL[e]).css({'display': 'block'});
+      $(modalURL[e]).css({'display': 'flex'});
       target.addClass('open');
     }
 
