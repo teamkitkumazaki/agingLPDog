@@ -1672,7 +1672,7 @@ header .header_logo a {
     font-size: 3.2rem;
   }
   .comp-section-title .section_ttl span {
-    display: none;
+    display: inline;
   }
   .comp-section-title .ttl_description {
     margin-top: 25px;
